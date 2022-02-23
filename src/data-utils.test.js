@@ -3,7 +3,13 @@ import { makeColumns } from './data-utils';
 
 test('makeColumns should make an array of columns that capitalizes key', () => {
   const expected = [
-
+    { key: 'first_name', name: 'First Name' },
+    { key: 'last_name', name: 'Last Name' },
+    { key: 'email', name: 'Email' },
+    { key: 'gender', name: 'Gender' },
+    { key: 'city', name: 'City' },
+    { key: 'country', name: 'Country' },
+    { key: 'language', name: 'Language' },
   ];
 
   const actual = makeColumns([
