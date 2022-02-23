@@ -2,7 +2,8 @@ import DataGrid from 'react-data-grid';
 import data from './data';
 import React from 'react';
 import { makeColumns } from './data-utils';
-import { VictoryAxis, VictoryBar, VictoryChart } from 'victory';
+import { VictoryAxis, VictoryBar, VictoryChart, VictoryPie } from 'victory';
+import { VictoryTheme } from 'victory';
 
 export default function App() {
 
@@ -29,12 +30,16 @@ export default function App() {
         columns={makeColumns(data)}
         rows={data}
       />
-      <VictoryChart domainPadding={20}>
+      <VictoryChart 
+        domainPadding={20}
+        theme={VictoryTheme.material}>
         <VictoryAxis 
           tickValues={[1, 2, 3, 4]}
+          tickFormat={['Q1', 'Q2', 'Q3', 'Q4']}
         />
         <VictoryAxis 
           dependentAxis
+          tickFormat={ (x) => (`$${x / 1000}k`)}
         />
         <VictoryBar 
           data={newData}
@@ -42,6 +47,16 @@ export default function App() {
           y="earnings"
         />
       </VictoryChart>
+      <VictoryPie 
+        colorScale={['palevioletred', 'gold', 'lightskyblue']}
+        padAngle={({ datum }) => datum.x}
+        innerRadius={100}
+        data={[
+          { x: 'Cats', y: 24 },
+          { x: 'Birds', y: 6 },
+          { x: 'Lizards', y: 15 },
+        ]}
+      />
     </>
   );
 }
