@@ -18,7 +18,7 @@ export default function App() {
     
     <DataGrid
       columns={columns}
-      rows={rows}
+      rows={data}
     />
 
   );
