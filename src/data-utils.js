@@ -32,19 +32,24 @@ export function makeColumns(arr) {
 
 // languages spoken in China (pie chart)
 export function languagesInChina(arr) {
-  const chineseUsers = arr.filter(arr => arr.country === 'China');
+  const chineseUsers = arr.filter(user => user.country === 'China');
 
-  const languages = chineseUsers.reduce((acc, curr) => {
-    if (acc[curr.language]) {
-      acc[curr.language]++;
+  const languages = chineseUsers.reduce((acc, user) => {
+    if (acc[user.language]) {
+      acc[user.language]++;
     } else {
-      acc[curr.language] = 1;
+      acc[user.language] = 1;
     }
 
     return acc;
   }, {});
+  const languagesArr = Object.entries(languages);
 
-  return languages;
+  const finalArr = languagesArr.map((language) => {
+    return { x: language[0], y: language[1] };
+  });
+
+  return finalArr;
 }
 
 /* OUTPUT:

@@ -39,11 +39,12 @@ test('makeColumns should make an array of columns that capitalizes key', () => {
 
 
 test('should render all langauges spoken in China', () => {
-  const expected =
+  const expected = [
     {
       French: 1,
       Chinese: 1,
-    };
+    }
+  ];
 
   const actual = languagesInChina([
     { country: 'China', language: 'Chinese' },

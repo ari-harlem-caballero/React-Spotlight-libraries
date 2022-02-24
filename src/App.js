@@ -1,7 +1,7 @@
 import DataGrid from 'react-data-grid';
 import data from './data';
 import React from 'react';
-import { makeColumns } from './data-utils';
+import { languagesInChina, makeColumns } from './data-utils';
 import { VictoryAxis, VictoryBar, VictoryChart, VictoryLine, VictoryPie } from 'victory';
 import { VictoryTheme } from 'victory';
 
@@ -16,6 +16,8 @@ export default function App() {
   //   { id: 0, title: 'Example' },
   //   { id: 1, title: 'Demo' }
   // ];
+
+  const piechart = languagesInChina(data);
 
   const newData = [
     { quarter: 1, earnings: 13000 },
@@ -49,14 +51,10 @@ export default function App() {
       </VictoryChart>
       
       <VictoryPie 
-        colorScale={['palevioletred', 'gold', 'lightskyblue']}
-        padAngle={({ datum }) => datum.x}
-        innerRadius={100}
-        data={[
-          { x: 'Cats', y: 24 },
-          { x: 'Birds', y: 6 },
-          { x: 'Lizards', y: 15 },
-        ]}
+        // colorScale={['palevioletred', 'gold', 'lightskyblue']}
+        // padAngle={({ datum }) => datum.x}
+        // innerRadius={100}
+        data={piechart}
       />
 
       <VictoryChart
