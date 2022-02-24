@@ -1,6 +1,8 @@
 //to test functions 
 import { makeColumns } from './data-utils';
 
+const { test, skip } = QUnit;
+
 test('makeColumns should make an array of columns that capitalizes key', () => {
   const expected = [
     { key: 'first_name', name: 'First Name' },
@@ -22,8 +24,56 @@ test('makeColumns should make an array of columns that capitalizes key', () => {
 });
 
 
-test('should list most popular job in each country', () => {
-  const expected = [];
+skip('should list most popular job in each country', () => {
+  const expected = [
+    {
+      China: 'Books',
+      Ethiopia: 'Automotive',
+      France: 'Kids'
+    }
+  ];
+
+  const actual = [];
+
+  expect.equal(actual, expected);
+});
+
+
+skip('should render all langauges spoken in China', () => {
+  const expected = [
+    {
+      French: 2,
+      Chinese: 4,
+      Georgian: 6,
+    }
+  ];
+
+  const actual = [];
+
+  expect.equal(actual, expected);
+});
+
+
+skip('should render the favorite colors of each gender demographic', () => {
+  const expected = [
+    {
+      male: {
+        pink: 9,
+        orange: 2,
+        red: 3,
+      },
+      'non-binary': {
+        pink: 3,
+        yellow: 18,
+        orange: 1,
+      },
+      genderqueer: {
+        pink: 6,
+        yellow: 20,
+        red: 10,
+      }
+    }
+  ];
 
   const actual = [];
 
