@@ -47,6 +47,7 @@ export default function App() {
           y="earnings"
         />
       </VictoryChart>
+      
       <VictoryPie 
         colorScale={['palevioletred', 'gold', 'lightskyblue']}
         padAngle={({ datum }) => datum.x}

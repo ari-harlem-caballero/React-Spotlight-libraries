@@ -20,3 +20,12 @@ test('makeColumns should make an array of columns that capitalizes key', () => {
 
   expect(actual).toEqual(expected);
 });
+
+
+test('should list most popular job in each country', () => {
+  const expected = [];
+
+  const actual = [];
+
+  expect.equal(actual, expected);
+});
