@@ -1,4 +1,4 @@
-import React from 'react';
+
 
 export function makeColumns(arr) {
   const keys = Object.keys(arr[0]);
@@ -17,9 +17,9 @@ export function makeColumns(arr) {
 }
 
 //in each country, list the most popular job (average?) (line-graph)
-export function mostPopularJob(arr) {
+// export function mostPopularJob(arr) {
 
-}
+// }
 
 /* OUTPUT:
 {
@@ -32,7 +32,19 @@ export function mostPopularJob(arr) {
 
 // languages spoken in China (pie chart)
 export function languagesInChina(arr) {
+  const chineseUsers = arr.filter(arr => arr.country === 'China');
 
+  const languages = chineseUsers.reduce((acc, curr) => {
+    if (acc[curr.language]) {
+      acc[curr.language]++;
+    } else {
+      acc[curr.language] = 1;
+    }
+
+    return acc;
+  }, {});
+
+  return languages;
 }
 
 /* OUTPUT:
@@ -46,7 +58,33 @@ export function languagesInChina(arr) {
 
 // fav color breakdown of each Gender (bar-graph)
 export function eachGenderFavColor(arr) {
+  const genders = arr.reduce((acc, curr) => {
+    if (acc.includes(curr.gender)) {
+      null;
+    } else {
+      acc.push(curr.gender);
+    }
+    return acc;
+  }, []);
 
+  const favColorBreakdown = genders.map(gender => {
+    const favColor = arr.reduce((acc, curr) => {
+      if (gender === curr.gender) {
+        if (acc[curr.gender]) {
+          acc[curr.gender]++;
+        } else {
+          acc[curr.gender] = 1;
+        }
+      }
+      return acc;
+    }, {});
+
+    return {
+      [gender]: favColor
+    };
+  });
+
+  return favColorBreakdown;
 }
 
 /* OUTPUT:
