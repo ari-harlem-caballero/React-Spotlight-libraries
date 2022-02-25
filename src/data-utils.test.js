@@ -1,5 +1,5 @@
 //to test functions 
-import { eachGenderFavColor, languagesInChina, makeColumns } from './data-utils';
+import { eachGenderFavColor, languagesInChina, makeColumns, mostPopularJob } from './data-utils';
 
 
 test('makeColumns should make an array of columns that capitalizes key', () => {
@@ -23,18 +23,22 @@ test('makeColumns should make an array of columns that capitalizes key', () => {
 });
 
 
-test('should list most popular job in each country', () => {
+test('should render a list of jobs and their popularity', () => {
   const expected = [
     {
-      China: 'Books',
-      Ethiopia: 'Automotive',
-      France: 'Kids'
+      Books: 4,
+      Automotive: 3,
+      Kids: 10
     }
   ];
 
-  const actual = [];
+  const actual = mostPopularJob([
+    { x: 'Books', y: 4 },
+    { x: 'Automotive', y: 3 },
+    { x: 'Kids', y: 10 }
+  ]);
 
-  expect.equal(actual, expected);
+  expect(actual).toEqual(expected);
 });
 
 

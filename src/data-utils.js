@@ -15,9 +15,26 @@ export function makeColumns(arr) {
   return columns;
 }
 
-//in each country, list the most popular job (average?) (line-graph)
+//list the most popular job: total of each job (line-graph)
 export function mostPopularJob(arr) {
-  const country = arr.filter(user => user.country);
+  const jobTotalsObj = arr.reduce((acc, curr) => {
+    if (acc[curr.job]) {
+      acc[curr.job]++;
+    } else {
+      acc[curr.job] = 1;
+    }
+
+    return acc;
+  }, []);
+
+  const jobsArr = Object.entries(jobTotalsObj);
+
+  const finalArr = jobsArr.map((job) => {
+    return { x: job[0], y: job[1] };
+  });
+
+  // console.log(finalArr);
+  return finalArr;
 }
 
 /* OUTPUT:

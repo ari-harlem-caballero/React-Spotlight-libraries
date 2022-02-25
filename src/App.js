@@ -1,7 +1,7 @@
 import DataGrid from 'react-data-grid';
 import data from './data';
 import React from 'react';
-import { languagesInChina, makeColumns } from './data-utils';
+import { languagesInChina, makeColumns, mostPopularJob } from './data-utils';
 import { VictoryAxis, VictoryBar, VictoryChart, VictoryLine, VictoryPie } from 'victory';
 import { VictoryTheme } from 'victory';
 
@@ -18,6 +18,8 @@ export default function App() {
   // ];
 
   const piechart = languagesInChina(data);
+
+  const linechart = mostPopularJob(data);
 
   const newData = [
     { quarter: 1, earnings: 13000 },
@@ -67,14 +69,7 @@ export default function App() {
           animate={{
             onLoad: { duration: 2000 }
           }}
-          data={[
-            { x: 'dog', y: 2 },
-            { x: 'cat', y: 3 },
-            { x: 'mice', y: 3 },
-            { x: 'bird', y: 4 },
-            { x: 'fire', y: 5 },
-            { x: 'darkness', y: 4 },
-          ]}
+          data={linechart(data)}
         />
       </VictoryChart>
     </>
