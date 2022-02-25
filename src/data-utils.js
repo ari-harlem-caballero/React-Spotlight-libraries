@@ -77,43 +77,84 @@ export function languagesInChina(arr) {
 }
 */
 
-// fav color breakdown of each Gender (bar-graph)
 export function eachGenderFavColor(arr) {
-  const genders = arr.reduce((acc, curr) => {
-    if (acc.includes(curr.gender)) {
+  const colors = arr.reduce((acc, curr) => {
+    if (acc.includes(curr.favorite_color)) {
       null;
     } else {
-      acc.push(curr.gender);
+      acc.push(curr.favorite_color);
     }
+
     return acc;
   }, []);
-
-  const favColorBreakdown = genders.map(gender => {
-    const favColor = arr.reduce((acc, curr) => {
-      if (gender === curr.gender) {
-        if (acc[curr.favorite_color]) {
-          acc[curr.favorite_color]++;
-        } else {
-          acc[curr.favorite_color] = 1;
-        }
+  const colorsByGender = colors.map(color => {
+    const hashMap = arr.reduce((acc, curr) => {
+      if (acc[curr.gender] && curr.favorite_color === color) {
+        acc[curr.gender]++;
+      } else if (curr.favorite_color === color) {
+        acc[curr.gender] = 1;
+      } else {
+        null;
       }
+
       return acc;
     }, {});
 
-    return {
-      [gender]: favColor
-    };
+    const arr2 = Object.entries(hashMap);
+    const finalArr = arr2.map(entry => {
+      return { gender: entry[0], count: entry[1] };
+    });
+
+    return finalArr;
   });
+  // below us is the end of our function
 
-  const colorArr = Object.entries(favColorBreakdown);
-
-  const finalArr = colorArr.map((favorite_color) => {
-    return { gender: favorite_color[1] }; 
-  });
-
-  console.log(finalArr);
-  return finalArr;
+  return colorsByGender;
 }
+
+
+
+// fav color breakdown of each Gender (bar-graph)
+// export function eachGenderFavColor(arr) {
+//   const genders = arr.reduce((acc, curr) => {
+//     if (acc.includes(curr.gender)) {
+//       null;
+//     } else {
+//       acc.push(curr.gender);
+//     }
+//     return acc;
+//   }, []);
+
+//   const favColorBreakdown = genders.map(gender => {
+//     const favColor = arr.reduce((acc, curr) => {
+//       if (gender === curr.gender) {
+//         if (acc[curr.favorite_color]) {
+//           acc[curr.favorite_color]++;
+//         } else {
+//           acc[curr.favorite_color] = 1;
+//         }
+//       }
+//       return acc;
+//     }, {});
+
+//     return {
+//       [gender]: favColor
+//     };
+//   });
+
+//   const colorArr = Object.entries(favColorBreakdown);
+
+//   const finalArr = colorArr.map((favorite_color) => {
+//     return { gender: favorite_color[1] }; 
+//   });
+
+//   // const colorsArr = favColorBreakdown.map(color => {
+//   //   Object.entries(color);
+//   // });
+  
+//   console.log(finalArr, favColorBreakdown);
+//   return favColorBreakdown;
+// }
 
 /* OUTPUT:
 {

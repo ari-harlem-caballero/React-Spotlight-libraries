@@ -8,7 +8,7 @@ export default [
     'country': 'Ethiopia',
     'language': 'Punjabi',
     'job': 'Music',
-    'favorite_color': 'Turquoise'
+    'favorite_color': 'Teal'
   }, {
     'id': 2,
     'first_name': 'Sayer',
@@ -18,7 +18,7 @@ export default [
     'country': 'France',
     'language': 'Malayalam',
     'job': 'Grocery',
-    'favorite_color': 'Red'
+    'favorite_color': 'Blue'
   }, {
     'id': 3,
     'first_name': 'Avis',
@@ -28,7 +28,7 @@ export default [
     'country': 'France',
     'language': 'Albanian',
     'job': 'Books',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 4,
     'first_name': 'Kean',
@@ -38,7 +38,7 @@ export default [
     'country': 'France',
     'language': 'Italian',
     'job': 'Garden',
-    'favorite_color': 'Red'
+    'favorite_color': 'Blue'
   }, {
     'id': 5,
     'first_name': 'Paulina',
@@ -88,7 +88,7 @@ export default [
     'country': 'Japan',
     'language': 'Kazakh',
     'job': 'Grocery',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 10,
     'first_name': 'Kahaleel',
@@ -98,7 +98,7 @@ export default [
     'country': 'Japan',
     'language': 'Tetum',
     'job': 'Movies',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 11,
     'first_name': 'Jephthah',
@@ -108,7 +108,7 @@ export default [
     'country': 'Japan',
     'language': 'Georgian',
     'job': 'Movie',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 12,
     'first_name': 'Kathrine',
@@ -128,7 +128,7 @@ export default [
     'country': 'Japan',
     'language': 'Gagauz',
     'job': 'Movies',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 14,
     'first_name': 'Gennie',
@@ -138,7 +138,7 @@ export default [
     'country': 'Japan',
     'language': 'Macedonian',
     'job': 'Movies',
-    'favorite_color': 'Orange'
+    'favorite_color': 'Blue'
   }, {
     'id': 15,
     'first_name': 'Carmon',
@@ -158,7 +158,7 @@ export default [
     'country': 'Iran',
     'language': 'Swahili',
     'job': 'Grocery',
-    'favorite_color': 'Red'
+    'favorite_color': 'Blue'
   }, {
     'id': 17,
     'first_name': 'Alisha',
@@ -178,7 +178,7 @@ export default [
     'country': 'Chile',
     'language': 'Norwegian',
     'job': 'Garden',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 19,
     'first_name': 'Nealon',
@@ -188,7 +188,7 @@ export default [
     'country': 'Chile',
     'language': 'Kazakh',
     'job': 'Grocery',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 20,
     'first_name': 'Kenyon',
@@ -208,7 +208,7 @@ export default [
     'country': 'Chile',
     'language': 'Czech',
     'job': 'Games',
-    'favorite_color': 'Turquoise'
+    'favorite_color': 'Teal'
   }, {
     'id': 22,
     'first_name': 'Shanie',
@@ -238,7 +238,7 @@ export default [
     'country': 'Chile',
     'language': 'Albanian',
     'job': 'Movie',
-    'favorite_color': 'Turquoise'
+    'favorite_color': 'Teal'
   }, {
     'id': 25,
     'first_name': 'Derry',
@@ -248,7 +248,7 @@ export default [
     'country': 'Chile',
     'language': 'Nepali',
     'job': 'Grocery',
-    'favorite_color': 'Red'
+    'favorite_color': 'Blue'
   }, {
     'id': 26,
     'first_name': 'Koo',
@@ -258,7 +258,7 @@ export default [
     'country': 'Chile',
     'language': 'Malayalam',
     'job': 'Games',
-    'favorite_color': 'Green'
+    'favorite_color': 'Teal'
   }, {
     'id': 27,
     'first_name': 'Susy',
@@ -288,7 +288,7 @@ export default [
     'country': 'France',
     'language': 'Thai',
     'job': 'Toys',
-    'favorite_color': 'Red'
+    'favorite_color': 'Blue'
   }, {
     'id': 30,
     'first_name': 'Charlot',
@@ -298,7 +298,7 @@ export default [
     'country': 'China',
     'language': 'Lao',
     'job': 'Home',
-    'favorite_color': 'Orange'
+    'favorite_color': 'Blue'
   }, {
     'id': 31,
     'first_name': 'Connie',
@@ -318,7 +318,7 @@ export default [
     'country': 'China',
     'language': 'Montenegrin',
     'job': 'Toys',
-    'favorite_color': 'Orange'
+    'favorite_color': 'Blue'
   }, {
     'id': 33,
     'first_name': 'Kipp',
@@ -328,7 +328,7 @@ export default [
     'country': 'China',
     'language': 'Kyrgyz',
     'job': 'Toys',
-    'favorite_color': 'Turquoise'
+    'favorite_color': 'Teal'
   }, {
     'id': 34,
     'first_name': 'Rodney',
@@ -338,7 +338,7 @@ export default [
     'country': 'China',
     'language': 'Hindi',
     'job': 'Toys',
-    'favorite_color': 'Orange'
+    'favorite_color': 'Blue'
   }, {
     'id': 35,
     'first_name': 'Renae',
@@ -418,7 +418,7 @@ export default [
     'country': 'China',
     'language': 'Finnish',
     'job': 'Movie',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 43,
     'first_name': 'Florette',
@@ -428,7 +428,7 @@ export default [
     'country': 'Bolivia',
     'language': 'Punjabi',
     'job': 'Toys',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 44,
     'first_name': 'Dyanna',
@@ -438,7 +438,7 @@ export default [
     'country': 'Bolivia',
     'language': 'Macedonian',
     'job': 'Games',
-    'favorite_color': 'Crimson'
+    'favorite_color': 'Red'
   }, {
     'id': 45,
     'first_name': 'Mora',
@@ -458,7 +458,7 @@ export default [
     'country': 'Bolivia',
     'language': 'Mongolian',
     'job': 'Music',
-    'favorite_color': 'Green'
+    'favorite_color': 'Teal'
   }, {
     'id': 47,
     'first_name': 'Kariotta',
@@ -468,7 +468,7 @@ export default [
     'country': 'Bolivia',
     'language': 'Oriya',
     'job': 'Garden',
-    'favorite_color': 'Orange'
+    'favorite_color': 'Blue'
   }, {
     'id': 48,
     'first_name': 'Tamarah',
@@ -478,7 +478,7 @@ export default [
     'country': 'Bolivia',
     'language': 'Bulgarian',
     'job': 'Music',
-    'favorite_color': 'Crimson'
+    'favorite_color': 'Red'
   }, {
     'id': 49,
     'first_name': 'Mackenzie',
@@ -518,7 +518,7 @@ export default [
     'country': 'France',
     'language': 'Belarusian',
     'job': 'Home',
-    'favorite_color': 'Red'
+    'favorite_color': 'Blue'
   }, {
     'id': 53,
     'first_name': 'Gayel',
@@ -528,7 +528,7 @@ export default [
     'country': 'South Korea',
     'language': 'Korean',
     'job': 'Toys',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 54,
     'first_name': 'Briant',
@@ -538,7 +538,7 @@ export default [
     'country': 'South Korea',
     'language': 'Romanian',
     'job': 'Garden',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 55,
     'first_name': 'Jermain',
@@ -558,7 +558,7 @@ export default [
     'country': 'South Korea',
     'language': 'Malay',
     'job': 'Books',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 57,
     'first_name': 'Gelya',
@@ -578,7 +578,7 @@ export default [
     'country': 'Chile',
     'language': 'Pashto',
     'job': 'Games',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 59,
     'first_name': 'Ellene',
@@ -608,7 +608,7 @@ export default [
     'country': 'South Korea',
     'language': 'Malagasy',
     'job': 'Toys',
-    'favorite_color': 'Orange'
+    'favorite_color': 'Blue'
   }, {
     'id': 62,
     'first_name': 'Kristyn',
@@ -618,7 +618,7 @@ export default [
     'country': 'South Korea',
     'language': 'Korean',
     'job': 'Garden',
-    'favorite_color': 'Orange'
+    'favorite_color': 'Blue'
   }, {
     'id': 63,
     'first_name': 'Bobette',
@@ -628,7 +628,7 @@ export default [
     'country': 'South Korea',
     'language': 'Māori',
     'job': 'Garden',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 64,
     'first_name': 'Kelli',
@@ -638,7 +638,7 @@ export default [
     'country': 'France',
     'language': 'Dutch',
     'job': 'Books',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 65,
     'first_name': 'Rockey',
@@ -648,7 +648,7 @@ export default [
     'country': 'Chile',
     'language': 'Mongolian',
     'job': 'Books',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 66,
     'first_name': 'Rabi',
@@ -668,7 +668,7 @@ export default [
     'country': 'France',
     'language': 'Dutch',
     'job': 'Books',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 68,
     'first_name': 'Kerianne',
@@ -678,7 +678,7 @@ export default [
     'country': 'Ethiopia',
     'language': 'Kurdish',
     'job': 'Games',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 69,
     'first_name': 'Micheline',
@@ -688,7 +688,7 @@ export default [
     'country': 'Ethiopia',
     'language': 'Tamil',
     'job': 'Music',
-    'favorite_color': 'Red'
+    'favorite_color': 'Blue'
   }, {
     'id': 70,
     'first_name': 'Blaire',
@@ -698,7 +698,7 @@ export default [
     'country': 'Ethiopia',
     'language': 'Armenian',
     'job': 'Garden',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 71,
     'first_name': 'Brigham',
@@ -708,7 +708,7 @@ export default [
     'country': 'Iceland',
     'language': 'Aymara',
     'job': 'Toys',
-    'favorite_color': 'Green'
+    'favorite_color': 'Teal'
   }, {
     'id': 72,
     'first_name': 'Wald',
@@ -718,7 +718,7 @@ export default [
     'country': 'Iceland',
     'language': 'Punjabi',
     'job': 'Books',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 73,
     'first_name': 'Fancie',
@@ -728,7 +728,7 @@ export default [
     'country': 'Iceland',
     'language': 'Tamil',
     'job': 'Books',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 74,
     'first_name': 'Benjie',
@@ -741,14 +741,14 @@ export default [
     'favorite_color': 'Blue'
   }, {
     'id': 75,
-    'first_name': 'Freddie',
+    'first_name': 'FBluedie',
     'last_name': 'Maplesden',
     'email': 'fmaplesden22@sciencedaily.com',
     'gender': 'Genderqueer',
     'country': 'Iran',
     'language': 'Lao',
     'job': 'Garden',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 76,
     'first_name': 'Maria',
@@ -768,17 +768,17 @@ export default [
     'country': 'Costa Rica',
     'language': 'Papiamento',
     'job': 'Grocery',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 78,
-    'first_name': 'Jarred',
+    'first_name': 'JarBlue',
     'last_name': 'Barribal',
     'email': 'jbarribal25@columbia.edu',
     'gender': 'Non-binary',
     'country': 'Iran',
     'language': 'Persian',
     'job': 'Books',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 79,
     'first_name': 'Tommy',
@@ -788,7 +788,7 @@ export default [
     'country': 'Iran',
     'language': 'Khmer',
     'job': 'Books',
-    'favorite_color': 'Turquoise'
+    'favorite_color': 'Teal'
   }, {
     'id': 80,
     'first_name': 'Alfy',
@@ -808,7 +808,7 @@ export default [
     'country': 'Iran',
     'language': 'German',
     'job': 'Grocery',
-    'favorite_color': 'Crimson'
+    'favorite_color': 'Red'
   }, {
     'id': 82,
     'first_name': 'Butch',
@@ -818,7 +818,7 @@ export default [
     'country': 'Iran',
     'language': 'German',
     'job': 'Toys',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 83,
     'first_name': 'Regen',
@@ -838,7 +838,7 @@ export default [
     'country': 'Iran',
     'language': 'Catalan',
     'job': 'Music',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 85,
     'first_name': 'Bernhard',
@@ -848,7 +848,7 @@ export default [
     'country': 'Iran',
     'language': 'Georgian',
     'job': 'Books',
-    'favorite_color': 'Crimson'
+    'favorite_color': 'Red'
   }, {
     'id': 86,
     'first_name': 'Felicity',
@@ -858,7 +858,7 @@ export default [
     'country': 'Iceland',
     'language': 'Tamil',
     'job': 'Home',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 87,
     'first_name': 'Yettie',
@@ -868,7 +868,7 @@ export default [
     'country': 'Iceland',
     'language': 'Polish',
     'job': 'Grocery',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 88,
     'first_name': 'Maynard',
@@ -908,7 +908,7 @@ export default [
     'country': 'Iceland',
     'language': 'Catalan',
     'job': 'Music',
-    'favorite_color': 'Goldenrod'
+    'favorite_color': 'Yellow'
   }, {
     'id': 92,
     'first_name': 'Tomas',
@@ -918,7 +918,7 @@ export default [
     'country': 'France',
     'language': 'Somali',
     'job': 'Garden',
-    'favorite_color': 'Red'
+    'favorite_color': 'Blue'
   }, {
     'id': 93,
     'first_name': 'Anton',
@@ -938,7 +938,7 @@ export default [
     'country': 'Ethiopia',
     'language': 'Dari',
     'job': 'Toys',
-    'favorite_color': 'Red'
+    'favorite_color': 'Blue'
   }, {
     'id': 95,
     'first_name': 'Torrin',
@@ -948,7 +948,7 @@ export default [
     'country': 'Bolivia',
     'language': 'Hindi',
     'job': 'Garden',
-    'favorite_color': 'Khaki'
+    'favorite_color': 'Red'
   }, {
     'id': 96,
     'first_name': 'Dickie',
@@ -958,7 +958,7 @@ export default [
     'country': 'Ethiopia',
     'language': 'Punjabi',
     'job': 'Games',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 97,
     'first_name': 'Torrie',
@@ -978,7 +978,7 @@ export default [
     'country': 'France',
     'language': 'Assamese',
     'job': 'Music',
-    'favorite_color': 'Fuscia'
+    'favorite_color': 'Pink'
   }, {
     'id': 99,
     'first_name': 'Orlan',
@@ -988,7 +988,7 @@ export default [
     'country': 'Ethiopia',
     'language': 'Kazakh',
     'job': 'Games',
-    'favorite_color': 'Indigo'
+    'favorite_color': 'Yellow'
   }, {
     'id': 100,
     'first_name': 'Lissie',
@@ -998,6 +998,6 @@ export default [
     'country': 'Ethiopia',
     'language': 'Telugu',
     'job': 'Toys',
-    'favorite_color': 'Green'
+    'favorite_color': 'Teal'
   }
 ];

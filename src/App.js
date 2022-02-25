@@ -1,8 +1,8 @@
 import DataGrid from 'react-data-grid';
 import data from './data';
 import React from 'react';
-import { languagesInChina, makeColumns, mostPopularJob } from './data-utils';
-import { VictoryAxis, VictoryBar, VictoryChart, VictoryLine, VictoryPie } from 'victory';
+import { eachGenderFavColor, languagesInChina, makeColumns, mostPopularJob } from './data-utils';
+import { VictoryAxis, VictoryBar, VictoryChart, VictoryLine, VictoryPie, VictoryStack } from 'victory';
 import { VictoryTheme } from 'victory';
 
 export default function App() {
@@ -21,12 +21,8 @@ export default function App() {
 
   const linechart = mostPopularJob(data);
 
-  const newData = [
-    { quarter: 1, earnings: 13000 },
-    { quarter: 2, earnings: 16500 },
-    { quarter: 3, earnings: 14250 },
-    { quarter: 4, earnings: 19000 }
-  ];
+  const barchart = eachGenderFavColor(data);
+
 
   return (
     <>
@@ -34,22 +30,32 @@ export default function App() {
         columns={makeColumns(data)}
         rows={data}
       />
+
+
       <VictoryChart 
-        domainPadding={20}
+        domainPadding={10}
         theme={VictoryTheme.material}>
         <VictoryAxis 
-          tickValues={[1, 2, 3, 4]}
-          tickFormat={['Q1', 'Q2', 'Q3', 'Q4']}
+          tickValues={[1, 2, 3, 4, 5, 6]}
+          tickFormat={['Bigender', 'Female', 'Agender', 'Non-binary', 'Male', 'GenderQueer'
+          ]}
         />
         <VictoryAxis 
           dependentAxis
-          tickFormat={ (x) => (`$${x / 1000}k`)}
+          tickFormat={ (x) => (`${x / 1}`)}
         />
-        <VictoryBar 
-          data={newData}
-          x="quarter"
-          y="earnings"
-        />
+        <VictoryStack>
+          {barchart.map((item, i) => {
+            return <VictoryBar 
+              key={i}
+              data={item}
+              x="gender"
+              y="count"
+            />;
+
+          })}
+        </VictoryStack>
+
       </VictoryChart>
       <h2>Languages Spoken in China:</h2>
       <VictoryPie 
