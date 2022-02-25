@@ -7,16 +7,6 @@ import { VictoryTheme } from 'victory';
 
 export default function App() {
 
-  // const columns = [
-  //   { key: 'id', name: 'ID' },
-  //   { key: 'title', name: 'Title' }
-  // ];
-
-  // const rows = [
-  //   { id: 0, title: 'Example' },
-  //   { id: 1, title: 'Demo' }
-  // ];
-
   const piechart = languagesInChina(data);
 
   const linechart = mostPopularJob(data);
@@ -37,7 +27,7 @@ export default function App() {
         theme={VictoryTheme.material}>
         <VictoryAxis 
           tickValues={[1, 2, 3, 4, 5, 6]}
-          tickFormat={['Bigender', 'Female', 'Agender', 'Non-binary', 'Male', 'GenderQueer'
+          tickFormat={['Bigender', 'Agender', 'Female', 'Male', 'Genderqueer', 'Non-binary'
           ]}
         />
         <VictoryAxis 
@@ -46,11 +36,18 @@ export default function App() {
         />
         <VictoryStack>
           {barchart.map((item, i) => {
+            const colorKey = Object.keys(item)[0];
+
             return <VictoryBar 
               key={i}
-              data={item}
+              data={item[colorKey]}
               x="gender"
               y="count"
+              style = {{
+                data: {
+                  fill: colorKey, stroke: colorKey
+                }
+              }}
             />;
 
           })}

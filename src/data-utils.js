@@ -33,7 +33,6 @@ export function mostPopularJob(arr) {
     return { x: job[0], y: job[1] };
   });
 
-  // console.log(finalArr);
   return finalArr;
 }
 
@@ -105,74 +104,17 @@ export function eachGenderFavColor(arr) {
       return { gender: entry[0], count: entry[1] };
     });
 
-    return finalArr;
+    return { [color]: finalArr };
   });
   // below us is the end of our function
-
+  console.log(colorsByGender);
   return colorsByGender;
 }
-
-
-
-// fav color breakdown of each Gender (bar-graph)
-// export function eachGenderFavColor(arr) {
-//   const genders = arr.reduce((acc, curr) => {
-//     if (acc.includes(curr.gender)) {
-//       null;
-//     } else {
-//       acc.push(curr.gender);
-//     }
-//     return acc;
-//   }, []);
-
-//   const favColorBreakdown = genders.map(gender => {
-//     const favColor = arr.reduce((acc, curr) => {
-//       if (gender === curr.gender) {
-//         if (acc[curr.favorite_color]) {
-//           acc[curr.favorite_color]++;
-//         } else {
-//           acc[curr.favorite_color] = 1;
-//         }
-//       }
-//       return acc;
-//     }, {});
-
-//     return {
-//       [gender]: favColor
-//     };
-//   });
-
-//   const colorArr = Object.entries(favColorBreakdown);
-
-//   const finalArr = colorArr.map((favorite_color) => {
-//     return { gender: favorite_color[1] }; 
-//   });
-
-//   // const colorsArr = favColorBreakdown.map(color => {
-//   //   Object.entries(color);
-//   // });
-  
-//   console.log(finalArr, favColorBreakdown);
-//   return favColorBreakdown;
-// }
-
-/* OUTPUT:
-{
-  male: {
-    pink: 9,
-    orange: 2,
-    red: 3,
-  },
-  non-binary: {
-    pink: 3,
-    yellow: 18,
-    orange: 1,
-  },
-  genderqueer: {
-    pink: 6,
-    yellow: 20,
-    red: 10,
-  },
-  etc...
-}
+/*
+yellowgreen
+darkturquoise
+gold
+pink
+thistle
+lightcoral
 */
