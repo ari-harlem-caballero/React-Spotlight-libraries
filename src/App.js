@@ -51,17 +51,19 @@ export default function App() {
           y="earnings"
         />
       </VictoryChart>
-      
+      <h2>Languages Spoken in China:</h2>
       <VictoryPie 
+        padding={90}
         colorScale={['palevioletred', 'gold', 'lightskyblue']}
         padAngle={({ datum }) => datum.x}
-        innerRadius={100}
+        innerRadius={70}
         data={piechart}
       />
-
+      <h2>Users Jobs:</h2>
       <VictoryChart
         theme={VictoryTheme.grayscale}
-        title="series-1">
+        title="series-1"
+        width={700}>
         <VictoryLine 
           style={{
             data: { stroke: 'goldenrod' }
@@ -69,7 +71,7 @@ export default function App() {
           animate={{
             onLoad: { duration: 2000 }
           }}
-          data={linechart(data)}
+          data={linechart}
         />
       </VictoryChart>
     </>
