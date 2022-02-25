@@ -107,14 +107,5 @@ export function eachGenderFavColor(arr) {
     return { [color]: finalArr };
   });
   // below us is the end of our function
-  console.log(colorsByGender);
   return colorsByGender;
 }
-/*
-yellowgreen
-darkturquoise
-gold
-pink
-thistle
-lightcoral
-*/
