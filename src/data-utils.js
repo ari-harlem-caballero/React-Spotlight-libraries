@@ -1,5 +1,4 @@
 
-
 export function makeColumns(arr) {
   const keys = Object.keys(arr[0]);
 
@@ -17,9 +16,9 @@ export function makeColumns(arr) {
 }
 
 //in each country, list the most popular job (average?) (line-graph)
-// export function mostPopularJob(arr) {
-
-// }
+export function mostPopularJob(arr) {
+  const country = arr.filter(user => user.country);
+}
 
 /* OUTPUT:
 {
@@ -75,10 +74,10 @@ export function eachGenderFavColor(arr) {
   const favColorBreakdown = genders.map(gender => {
     const favColor = arr.reduce((acc, curr) => {
       if (gender === curr.gender) {
-        if (acc[curr.gender]) {
-          acc[curr.gender]++;
+        if (acc[curr.favorite_color]) {
+          acc[curr.favorite_color]++;
         } else {
-          acc[curr.gender] = 1;
+          acc[curr.favorite_color] = 1;
         }
       }
       return acc;
@@ -89,7 +88,14 @@ export function eachGenderFavColor(arr) {
     };
   });
 
-  return favColorBreakdown;
+  const colorArr = Object.entries(favColorBreakdown);
+
+  const finalArr = colorArr.map((favorite_color) => {
+    return { gender: favorite_color[1] }; 
+  });
+
+  console.log(finalArr);
+  return finalArr;
 }
 
 /* OUTPUT:

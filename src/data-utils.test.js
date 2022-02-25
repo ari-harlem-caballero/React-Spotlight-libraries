@@ -23,36 +23,36 @@ test('makeColumns should make an array of columns that capitalizes key', () => {
 });
 
 
-// skip('should list most popular job in each country', () => {
-//   const expected = [
-//     {
-//       China: 'Books',
-//       Ethiopia: 'Automotive',
-//       France: 'Kids'
-//     }
-//   ];
-
-//   const actual = [];
-
-//   expect.equal(actual, expected);
-// });
-
-
-test('should render all langauges spoken in China', () => {
+test('should list most popular job in each country', () => {
   const expected = [
     {
-      French: 1,
-      Chinese: 1,
+      China: 'Books',
+      Ethiopia: 'Automotive',
+      France: 'Kids'
     }
   ];
 
-  const actual = languagesInChina([
-    { country: 'China', language: 'Chinese' },
-    { country: 'China', language: 'French' },
-  ]);
+  const actual = [];
 
-  expect(actual).toEqual(expected);
+  expect.equal(actual, expected);
 });
+
+
+// test('should render all langauges spoken in China', () => {
+//   const expected = [
+//     {
+//       French: 1,
+//       Chinese: 1,
+//     }
+//   ];
+
+//   const actual = languagesInChina([
+//     { country: 'China', language: 'Chinese' },
+//     { country: 'China', language: 'French' },
+//   ]);
+
+//   expect(actual).toEqual(expected);
+// });
 
 
 // test('should render the favorite colors of each gender demographic', () => {

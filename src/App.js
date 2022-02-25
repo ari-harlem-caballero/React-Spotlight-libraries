@@ -51,9 +51,9 @@ export default function App() {
       </VictoryChart>
       
       <VictoryPie 
-        // colorScale={['palevioletred', 'gold', 'lightskyblue']}
-        // padAngle={({ datum }) => datum.x}
-        // innerRadius={100}
+        colorScale={['palevioletred', 'gold', 'lightskyblue']}
+        padAngle={({ datum }) => datum.x}
+        innerRadius={100}
         data={piechart}
       />
 
